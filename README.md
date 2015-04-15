@@ -21,11 +21,11 @@ Connection database
 You can connect to mysql with:
 - login: admin
 - password:admin
-- dabatase_name : <name_dump>.sql in /path/to/database/dump/files
+- dabatase_name : file's name  in /path/to/database/dump/files
 
 Override login & passord
 --------------
-docker run -d -p 3306:3306 -v ./path/to/database/dump/files:/root/database_dump:rw  yougos666/docker-mysql --env user=<value> password=<value>
+docker run -d -p 3306:3306 -v ./path/to/database/dump/files:/root/database_dump:rw  yougos666/docker-mysql --env user=value password=value
 
 
 
