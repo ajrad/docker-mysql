@@ -19,9 +19,9 @@ docker run -d -p 3306:3306 -v ./path/to/database/dump/files:/root/database_dump:
 Connection database
 -------------
 You can connect to mysql with:
-login: admin
-password:admin
-dabatase_name : <name_dump>.sql in /path/to/database/dump/files
+- login: admin
+- password:admin
+- dabatase_name : <name_dump>.sql in /path/to/database/dump/files
 
 Override login & passord
 --------------
