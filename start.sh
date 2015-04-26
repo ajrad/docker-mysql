@@ -3,7 +3,11 @@
 if [ -e /root/database_dump.lock ]
 then
     echo  "Les dumps ont déjà été importés"
-    exit -1
+    echo "Starting MySQL Server"
+    /usr/sbin/mysqld
+
+    tail -f /var/log/mysql/error.log
+
 else
     touch /root/database_dump.lock
 fi
