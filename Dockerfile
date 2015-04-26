@@ -3,7 +3,7 @@ FROM ubuntu:latest
 MAINTAINER David Le Riche <david.leriche@openwide.fr>
 
 # Install latest updates and mysql
-RUN apt-get update;apt-get upgrade -y; apt-get -y install mysql-client mysql-server curl openssh-client vim touch
+RUN apt-get update;apt-get upgrade -y; apt-get -y install mysql-client mysql-server curl openssh-client vim
 
 # Enable remote access (default is localhost only, we change this
 # otherwise our database would not be reachable from outside the container)

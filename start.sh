@@ -23,6 +23,8 @@ if [ -d $PATH_DIR_DUMP ]; then
         mysqladmin shutdown
         echo "finished"
     done
+else
+    rm /root/database_dump.lock;
 fi
 
 
