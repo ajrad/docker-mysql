@@ -2,7 +2,7 @@
 
 if [ -e /root/database_dump.lock ]
 then
-    echo_info "Les dumps ont déjà été importés"
+    echo  "Les dumps ont déjà été importés"
     exit -1
 else
     touch /root/database_dump.lock
